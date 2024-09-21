@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditi Portfolio</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Logo.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Experience</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Web Developer</p><br>
+            <h1> Hi, I'm <span>Aditi</span> <br><br><br>Kushwaha from India </h1>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="self_pic.jpg" alt="Aditi Kushwaha">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br>
+                <p>Final year BTech student at BN College with a passion for coding and exploring new tech. Skilled in Java, DSA, Python, and front-end dev (HTML, CSS, JS). Seeking challenging opportunities to leverage my skills and expand my software development knowledge.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills', event)"> Skills</p>
+                    
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java Developer</span><br>Java App Interfaces</li>
+                        <li><span>Web Developer</span><br>Web App Development</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--try new about -->
+
+<div class="card">
+    <div class="circle">
+        <img src="Logo.png" alt="my logo" class="logo">
+    </div>
+    <img src="self_pic-removebg-preview.png" alt="My Picture" class="my_img">
+    <div class="content">
+        <h2>About Me</h2>
+        <p>
+            Final year BTech student at BN College with a passion for coding and exploring new tech. Skilled in Java, 
+            DSA, Python, and front-end dev (HTML, CSS, JS). Seeking challenging opportunities to leverage my skills 
+            and expand my software development knowledge.
+        </p>
+        <p><i class="fa-solid fa-envelope"></i> aditi.kush02@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 8601404802</p>
+        
+        <div class="social-icons">
+            <a href="https://github.com/" aria-label="GitHub"><i class="fa-brands fa-github-alt"></i></a>
+            <a href="https://linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        
+        <a href="AditiKushwaha_resume.pdf" download class="btn btn2">Download CV</a>
+    </div>
+</div>
+ 
+
+
+<!-- Education & Experience Section -->
+<div id="education">
+    <div class="education">
+        <h6 class="heading">Education & Experience</h6>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2018-19</div>
+                <div class="timeline-content">
+                    <h3>High School</h3>
+                    <p>Lucknow Public School<br>Grade: 96.4%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020-21</div>
+                <div class="timeline-content">
+                    <h3>Intermediate</h3>
+                    <p>Lucknow Public School<br>Science<br>Grade: 94.6%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021-25</div>
+                <div class="timeline-content">
+                    <h3>Graduation</h3>
+                    <p>B.N. College of Engineering and Technology<br>BTech<br>Computer Science & Engineering</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Internship</h3>
+                    <p>Java Intern at CodTech IT Solutions<br>Duration: 1 month<br>Tech: Java, Spring Boot, Maven<br>Work: Student Grade System, Calculator</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title"> Projects</h1>
+        <div class="work-list">
+            <!-- Project 1 -->
+            <div class="work">
+                <img src="project-design-in-project-management.png" alt="Project Image 1">
+                <div class="layer">
+                    <h3>Lets Thango</h3>
+                    <p>Social event management system with a focus on connecting event hosts and participants seamlessly.</p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="work">
+                <img src="project-design-in-project-management.png" alt="Project Image 2">
+                <div class="layer">
+                    <h3>WordPress</h3>
+                    <p>Custom WordPress plugin development for business websites with dynamic features.</p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="work">
+                <img src="project-design-in-project-management.png" alt="Project Image 3">
+                <div class="layer">
+                    <h3>Student Grade System</h3>
+                    <p>Developed a system to track student grades and progress using Java, Spring Boot, and Maven.</p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+    <div class="img-container">
+        <img src="Logo.png" alt="Logo" >
+    </div>
+   
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> aditi.kush02@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 8601404802</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="AditiKushwaha_resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @Aditi. Made with <i class="fa-solid fa-heart"></i> by Aditi Kushwaha</p>
+    </div>
+</div>
+
+<!-- JavaScript Section -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname, event) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!-- Google Sheets Form Submission Script -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwO9bSVtvQRu0aKTFQZaJTjsTMPkvG2wsSFUE4jQhNZaRJbjHKSEzPYTL_02H9Zag/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(() => { msg.innerHTML = ""; }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
+
+</body>
+</html>
