@@ -1,10 +1,3 @@
-/*:root {
-    --bg-black-900: #f2f2fc;
-    --bg-black-100: #fdf9ff;
-    --bg-black-50: #e8dfec;
-    --text-black-900: #302e4d;
-    --text-black-700: #504e70;
-}*/
 html{
     scroll-behavior: smooth; /* click on contact and it will smoothly roll down to contact me section*/
 }
@@ -13,35 +6,22 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5rem;
-    /*font-size: 16px;*/
-    
+    /*font-size: 16px;*/ 
 }
-
 * {
     margin: 0;
     padding: 0;
-    /*outline: none;
-    text-decoration: none;*/
     box-sizing: border-box;
 }
-.cursor{
-    position:absolute;
-    border-radius:50;
-background-color: white;
-mix-blend-mode: difference;
-}
-
-#header{
+#header {
     width: 100%;
     height: 100vh;
-background-image: url(ai.webp);
-background-size: cover;
-background-position: center;
-
+    background-image: url(ai.webp);
+    background-size: cover;
+    background-position: center;
 }
 .container{
     padding: 10px 10%;
-
 }
 nav{
     display: flex; /*so that image and links will be side by side*/
@@ -52,7 +32,6 @@ nav{
 
 .logo{
     width: 120px;
-
 }
 nav ul li{
     display: inline-block; /*horizontally aligned*/
@@ -87,7 +66,6 @@ color:#fff;
 .header-text h1{
     font-size:60px;
     margin-top: 20px;
-
 }
 .header-text h1 span{
     color: #036677;
@@ -108,11 +86,6 @@ color:#fff;
     flex-basis: 35%; /* changed the width of column*/
 
 }
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;/* for edges to be round*/
-    margin-top: 20%;
-}
 .about-col-2{
    flex-basis: 60%;
   
@@ -126,49 +99,8 @@ color:#fff;
     color: #fff;
     
 }
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;/*0 from left and right*/
-
-}
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight:500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-links::after{
-    content: '';
-    width:0;
-    height: 3px;
-    background: #3296af;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-.tab-links.active-link::after{
-width:50%;
-}
-.tab-contents ul li{
-list-style: none;
-margin: 10px 0;
-
-}
-.tab-contents ul li span{
-    color: #45aac4 ;
-    font-size: 14px;
-}
-.tab-contents{
-display: none;
-
-}
-.tab-contents.active-tab{
-    display: block;/* so it will be visible*/
-}
 /*card*/
-body .card{
+.about-col-1 .card{
     min-height: 100vh;
     margin:10px;
     padding-right: 0;
@@ -177,8 +109,8 @@ body .card{
 }
 .card{
     position: relative;
-    width:1200px;
-    height:350px;
+    width:100px;
+    height:100px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -186,9 +118,8 @@ body .card{
     transition-delay:0.5s;
 }
 .card:hover{
-    width: 600px;
+    width: 700px;
     transition-delay: 0.5s;
-
 }
 .card .circle{
     position:absolute;
@@ -196,7 +127,7 @@ body .card{
     left:0;
     width:100%;
     height: 100%;
-    border-radius:20px;
+    border-radius:10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,8 +138,8 @@ body .card{
     top:30;
     left:2;
     right: 2;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     background: #050c0f;
     border: 8px solid #0373a0;
@@ -218,16 +149,16 @@ body .card{
 
 .card:hover .circle::before{
     transition-delay: 0.5s;
-    width: 100%;
-    height:100%;
-    border-radius: 20px;
+    width: 70%;
+    height:80%;
+    border-radius: 10px;
     background: #0373a0;
-
 }
 .card .circle .logo{
     position: relative;
     width: 250px;
     transition: 0.5s;
+    border-radius: 50%;
     transition-delay: 0.5s;
 }
 
@@ -239,32 +170,31 @@ body .card{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    transform: translate(-50%, -50%) scale(0) rotate(360deg);
     height: 300px;
     transition: 0.5s ease-in-out;
 }
 
 .card:hover .my_img{
-    transition-delay: 0.75s;
-    top: 25%;
-    left: 75%;
+    top: 55%;
+    left: 70%;
     height: 530px;
-    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+    border-radius: 5%;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
 }
 .card .content{
     position: absolute;
     width: 50%;
-    left: 20%;
-    padding: 20px;
+    left: 40%;
+    padding: 30px;
     opacity: 0;
-    transition: opacity 0.5s,visibility 0.5s left;
+    transition: opacity 0.5s,visibility 0.5s left 0.5s;
     visibility: hidden;
 }
 .card:hover .content{
-    
     opacity: 1;
     visibility: visible;
-    left: 20px;
+    left: 40px;
     transition-delay: 0.75s;
 }
 .card .content h2{
@@ -282,7 +212,7 @@ body .card{
     position: relative;
     color: #fff;
     background: #15a6b1;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 10px;
     display: inline-block;
     text-decoration: none;
@@ -293,7 +223,7 @@ body .card{
 
 /* Education & Experiences */
 .heading {
-    font-size: 7rem;
+    font-size: calc(5vw + 1rem);
     text-align: center;
     margin: 2rem 0;
 }
@@ -518,13 +448,8 @@ transform: scale(1.1); /* to increase the size*/
     object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 
-
-    
-
-
 .contact-left{
-    flex-basis: 35%;
-    
+    flex-basis: 35%; 
 }
 .contact-right{
     flex-basis: 35%;
@@ -540,7 +465,6 @@ color: #fff;
 }
 .social-icons{
     margin-top: 30px;
-
 }
 .social-icons a{
     text-decoration: none;
@@ -561,7 +485,6 @@ background: #15a6b1;
 }
 .contact-right form{
     width: 100%;
-
 }
 form input, form textarea{
     width:100%;
@@ -579,7 +502,6 @@ form btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-
 }
 .copyright{
     width: 100%;
@@ -602,19 +524,15 @@ nav .fas{
 @media only screen and (max-width:700px){
     #header{
         background-image:url(16062.png);
+            background-size: cover;
+            background-position: center;
     }
     .header-text{
         margin-top: 50%;
         font-size: 16px;
     }
-   
     .header-text h1{
         font-size: 30px;
-    }
-    nav .fas{
-        display: block;
-        font-size: 25px;
-        color:#fff;
     }
     nav ul{
         background:#3096af;
@@ -627,7 +545,13 @@ nav .fas{
 z-index:2;
 transition: right 0.5s;
     }
-    nav ul li{
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        color: #fff;
+    }
+    
+    nav ul li {
         display: block;
         margin: 25px;
 
@@ -666,28 +590,7 @@ flex-basis:100%;
     color:#61b752;
     margin-top: -40px;
     display: block;
-
 }
-
-
-
-/*.section {
-    background: var(--bg-black-900);
-    min-height: 100vh; Changed from min-height
-    display: block;
-    position: fixed;
-    left: 270px;
-    top: 0;
-    right: 0;
-}*/
-
-/*nav
-.nav {
-    width: 270px;
-    background: var(--bg-black-100);
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 10;
+.heading{
+    font-size: calc(5vw + 1rem);
 }
-*/
