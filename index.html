@@ -37,22 +37,33 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="self_pic.jpg" alt="Aditi Kushwaha">
+
+                <div class="card">
+                    <div class="circle">
+                        <img src="Logo.png" alt="my logo" class="logo">
+                    </div>
+                    <img src="self_pic.jpg" alt="My Picture" class="my_img">
+                    <div class="content">
+                        <h2>About Me</h2>
+                        <p><br>
+                            Final year BTech student at BN College with a passion for coding and exploring new tech. Skilled in Java, 
+                            DSA, Python, and front-end dev (HTML, CSS, JS). Seeking challenging opportunities to leverage my skills 
+                            and expand my software development knowledge.
+                        </p>
+                        <p><i class="fa-solid fa-envelope"></i> aditi.kush02@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 8601404802</p>
+                        
+                        <div class="social-icons">
+                            <a href="https://github.com/" aria-label="GitHub"><i class="fa-brands fa-github-alt"></i></a>
+                            <a href="https://linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="AditiKushwaha_resume.pdf" download class="btn btn2">Download CV</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1><br>
-                <p>Final year BTech student at BN College with a passion for coding and exploring new tech. Skilled in Java, DSA, Python, and front-end dev (HTML, CSS, JS). Seeking challenging opportunities to leverage my skills and expand my software development knowledge.</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills', event)"> Skills</p>
-                    
-                </div>
-
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Java Developer</span><br>Java App Interfaces</li>
-                        <li><span>Web Developer</span><br>Web App Development</li>
-                    </ul>
-                </div>
+                <h1 class="sub-title"></h1><br>
+                <p></p>
                 
             </div>
         </div>
@@ -60,34 +71,8 @@
 </div>
 <!--try new about -->
 
-<div class="card">
-    <div class="circle">
-        <img src="Logo.png" alt="my logo" class="logo">
-    </div>
-    <img src="self_pic-removebg-preview.png" alt="My Picture" class="my_img">
-    <div class="content">
-        <h2>About Me</h2>
-        <p>
-            Final year BTech student at BN College with a passion for coding and exploring new tech. Skilled in Java, 
-            DSA, Python, and front-end dev (HTML, CSS, JS). Seeking challenging opportunities to leverage my skills 
-            and expand my software development knowledge.
-        </p>
-        <p><i class="fa-solid fa-envelope"></i> aditi.kush02@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> 8601404802</p>
-        
-        <div class="social-icons">
-            <a href="https://github.com/" aria-label="GitHub"><i class="fa-brands fa-github-alt"></i></a>
-            <a href="https://linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://twitter.com/" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-        
-        <a href="AditiKushwaha_resume.pdf" download class="btn btn2">Download CV</a>
-    </div>
-</div>
+
  
-
-
 <!-- Education & Experience Section -->
 <div id="education">
     <div class="education">
@@ -204,29 +189,6 @@
 </div>
 
 <!-- JavaScript Section -->
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname, event) {
-        for (var tablink of tablinks) {
-            tablink.classList.remove("active-link");
-        }
-        for (var tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu() {
-        sidemenu.style.right = "0";
-    }
-    function closemenu() {
-        sidemenu.style.right = "-200px";
-    }
-</script>
 
 <!-- Google Sheets Form Submission Script -->
 <script>
