@@ -138,6 +138,7 @@ color:#fff;
 .about-col-2 .content p {
     color: #fff;
     margin: 10px 0;
+    text-align:justify;
 }
 
 /* Button Styling */
@@ -176,14 +177,6 @@ color:#fff;
 
 .social-icons a:hover {
     background: #0e7c86;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .about-col-2 {
-        max-width: 90%;
-        padding: 20px;
-    }
 }
 
 /* Responsive Design */
