@@ -131,7 +131,7 @@ color:#fff;
 .about-col-2 .content h2 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 3em;
     line-height: 1em;
 }
 
@@ -139,6 +139,7 @@ color:#fff;
     color: #fff;
     margin: 10px 0;
     text-align:justify;
+    font-size: 1.1em;
 }
 
 /* Button Styling */
@@ -146,11 +147,11 @@ color:#fff;
     display: inline-block;
     color: #fff;
     background: #15a6b1;
-    padding: 15px 25px;
+    padding: 5px 5px 15px;
     border-radius: 10px;
     text-decoration: none;
-    font-weight: 600;
-    margin-top: 10px;
+    font-weight: 400;
+    margin-top: 5px;
     transition: 0.3s;
 }
 
@@ -160,7 +161,7 @@ color:#fff;
 
 /* Social Icons */
 .social-icons {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -169,17 +170,42 @@ color:#fff;
 .social-icons a {
     color: #fff;
     font-size: 1.5em;
-    padding: 10px;
+    width: 40px; /* Set a fixed width */
+    height: 40px; /* Set a fixed height */
+    display: flex;
+    padding: 5px;
     background: #15a6b1;
     border-radius: 8px;
     transition: 0.3s;
 }
+.social-icons .btn.btn2{
+    display: inline-block;
+    background: #15a6b1;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 1.2em;
+    width: 100px;
+    height: 45px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: center;
+    margin-top: 5px; /* Adjust spacing */
+}
+
 
 .social-icons a:hover {
     background: #0e7c86;
 }
 
 /* Responsive Design */
+@media (max-width: 1180px){
+    .about-col-1 .my_img{
+        max-width: 70%;
+        border-radius: 40%;
+        margin-bottom: 50px;
+    }
+}
 @media (max-width: 768px) {
     .row {
         flex-direction: column;
@@ -193,6 +219,10 @@ color:#fff;
         max-width: 90%;
         padding: 20px;
     
+    }
+    .about-col-1 .my_img{
+        max-width: 70%;
+        height: auto;
     }
 }
 
@@ -338,7 +368,7 @@ color:#fff;
 
 .work img {
     width: 100%;       /* Keep width responsive */
-    height: 350px;     /* Increase the height to 400px */
+    height: 250px;     /* Increase the height to 400px */
     object-fit: cover; /* Ensure the image scales properly */
     border-radius: 10px;
     display: block;
